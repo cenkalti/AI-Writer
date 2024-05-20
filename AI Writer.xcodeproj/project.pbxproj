@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3716CBF2BA6A9ED00ADF0CA /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3716CBE2BA6A9ED00ADF0CA /* HelpView.swift */; };
+		B37F818B2B75DC2600317377 /* AIWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37F818A2B75DC2600317377 /* AIWriterApp.swift */; };
+		B37F818D2B75DC2600317377 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37F818C2B75DC2600317377 /* SettingsView.swift */; };
+		B37F818F2B75DC2900317377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37F818E2B75DC2900317377 /* Assets.xcassets */; };
+		B37F81922B75DC2900317377 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37F81912B75DC2900317377 /* Preview Assets.xcassets */; };
+		B3BAA27D2B8FF18800587D62 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BAA27C2B8FF18800587D62 /* Error.swift */; };
+		B3BAA27F2B8FFF7600587D62 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BAA27E2B8FFF7600587D62 /* Defaults.swift */; };
+		B3BAA28D2B937DF300587D62 /* LaunchAtLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BAA28C2B937DF300587D62 /* LaunchAtLogin.swift */; };
+		B3BD7E5B2B8C563400E01D9E /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BD7E5A2B8C563400E01D9E /* FloatingPanel.swift */; };
+		B3BD7E5D2B8C591900E01D9E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BD7E5C2B8C591900E01D9E /* ChatView.swift */; };
+		B3BD7E5F2B8C644900E01D9E /* ChatGPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BD7E5E2B8C644900E01D9E /* ChatGPT.swift */; };
+		B3F7BFFB2B83E7D800B82851 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F7BFFA2B83E7D800B82851 /* Service.swift */; };
+		B3F7BFFF2B83FDB900B82851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F7BFFE2B83FDB900B82851 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B3716CBE2BA6A9ED00ADF0CA /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		B37F81872B75DC2600317377 /* AI Writer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI Writer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37F818A2B75DC2600317377 /* AIWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIWriterApp.swift; sourceTree = "<group>"; };
+		B37F818C2B75DC2600317377 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B37F818E2B75DC2900317377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B37F81912B75DC2900317377 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B37F81932B75DC2900317377 /* AI_Writer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AI_Writer.entitlements; sourceTree = "<group>"; };
+		B3888D2E2B834DD8005C38A4 /* AI-Writer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AI-Writer-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B3BAA27C2B8FF18800587D62 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		B3BAA27E2B8FFF7600587D62 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		B3BAA28C2B937DF300587D62 /* LaunchAtLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLogin.swift; sourceTree = "<group>"; };
+		B3BD7E5A2B8C563400E01D9E /* FloatingPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanel.swift; sourceTree = "<group>"; };
+		B3BD7E5C2B8C591900E01D9E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		B3BD7E5E2B8C644900E01D9E /* ChatGPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPT.swift; sourceTree = "<group>"; };
+		B3F7BFFA2B83E7D800B82851 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B3F7BFFE2B83FDB900B82851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B37F81842B75DC2600317377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B37F817E2B75DC2600317377 = {
+			isa = PBXGroup;
+			children = (
+				B37F81892B75DC2600317377 /* AI Writer */,
+				B37F81882B75DC2600317377 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B37F81882B75DC2600317377 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B37F81872B75DC2600317377 /* AI Writer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B37F81892B75DC2600317377 /* AI Writer */ = {
+			isa = PBXGroup;
+			children = (
+				B37F81932B75DC2900317377 /* AI_Writer.entitlements */,
+				B3888D2E2B834DD8005C38A4 /* AI-Writer-Info.plist */,
+				B37F818A2B75DC2600317377 /* AIWriterApp.swift */,
+				B3F7BFFE2B83FDB900B82851 /* AppDelegate.swift */,
+				B3BD7E5E2B8C644900E01D9E /* ChatGPT.swift */,
+				B3BD7E5C2B8C591900E01D9E /* ChatView.swift */,
+				B3BAA27E2B8FFF7600587D62 /* Defaults.swift */,
+				B3BAA27C2B8FF18800587D62 /* Error.swift */,
+				B3BD7E5A2B8C563400E01D9E /* FloatingPanel.swift */,
+				B3716CBE2BA6A9ED00ADF0CA /* HelpView.swift */,
+				B3BAA28C2B937DF300587D62 /* LaunchAtLogin.swift */,
+				B3F7BFFA2B83E7D800B82851 /* Service.swift */,
+				B37F818C2B75DC2600317377 /* SettingsView.swift */,
+				B37F818E2B75DC2900317377 /* Assets.xcassets */,
+				B37F81902B75DC2900317377 /* Preview Content */,
+			);
+			path = "AI Writer";
+			sourceTree = "<group>";
+		};
+		B37F81902B75DC2900317377 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B37F81912B75DC2900317377 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B37F81862B75DC2600317377 /* AI Writer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37F81962B75DC2900317377 /* Build configuration list for PBXNativeTarget "AI Writer" */;
+			buildPhases = (
+				B37F81832B75DC2600317377 /* Sources */,
+				B37F81842B75DC2600317377 /* Frameworks */,
+				B37F81852B75DC2600317377 /* Resources */,
+				B3BAA2832B900DAB00587D62 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AI Writer";
+			packageProductDependencies = (
+			);
+			productName = "AI Writer";
+			productReference = B37F81872B75DC2600317377 /* AI Writer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B37F817F2B75DC2600317377 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B37F81862B75DC2600317377 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = B37F81822B75DC2600317377 /* Build configuration list for PBXProject "AI Writer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B37F817E2B75DC2600317377;
+			packageReferences = (
+			);
+			productRefGroup = B37F81882B75DC2600317377 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B37F81862B75DC2600317377 /* AI Writer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B37F81852B75DC2600317377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37F81922B75DC2900317377 /* Preview Assets.xcassets in Resources */,
+				B37F818F2B75DC2900317377 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3BAA2832B900DAB00587D62 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B37F81832B75DC2600317377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3BAA27F2B8FFF7600587D62 /* Defaults.swift in Sources */,
+				B3BAA28D2B937DF300587D62 /* LaunchAtLogin.swift in Sources */,
+				B3BAA27D2B8FF18800587D62 /* Error.swift in Sources */,
+				B3716CBF2BA6A9ED00ADF0CA /* HelpView.swift in Sources */,
+				B37F818D2B75DC2600317377 /* SettingsView.swift in Sources */,
+				B3BD7E5B2B8C563400E01D9E /* FloatingPanel.swift in Sources */,
+				B3F7BFFF2B83FDB900B82851 /* AppDelegate.swift in Sources */,
+				B3BD7E5F2B8C644900E01D9E /* ChatGPT.swift in Sources */,
+				B37F818B2B75DC2600317377 /* AIWriterApp.swift in Sources */,
+				B3BD7E5D2B8C591900E01D9E /* ChatView.swift in Sources */,
+				B3F7BFFB2B83E7D800B82851 /* Service.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B37F81942B75DC2900317377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B37F81952B75DC2900317377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B37F81972B75DC2900317377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AI Writer/AI_Writer.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AI Writer/Preview Content\"";
+				DEVELOPMENT_TEAM = S8M9AV8U9E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AI-Writer-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Writer";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cenkalti.ai.writer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B37F81982B75DC2900317377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AI Writer/AI_Writer.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AI Writer/Preview Content\"";
+				DEVELOPMENT_TEAM = S8M9AV8U9E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AI-Writer-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Writer";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cenkalti.ai.writer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B37F81822B75DC2600317377 /* Build configuration list for PBXProject "AI Writer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37F81942B75DC2900317377 /* Debug */,
+				B37F81952B75DC2900317377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37F81962B75DC2900317377 /* Build configuration list for PBXNativeTarget "AI Writer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37F81972B75DC2900317377 /* Debug */,
+				B37F81982B75DC2900317377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B37F817F2B75DC2600317377 /* Project object */;
+}
