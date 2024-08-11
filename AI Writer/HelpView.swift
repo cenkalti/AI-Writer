@@ -4,6 +4,8 @@ struct HelpView: View {
     
     @Environment(\.openWindow) var openWindow
     
+    let projectURL = "https://github.com/cenkalti/AI-Writer"
+    
     var body: some View {
         Group {
             VStack(alignment: .center) {
@@ -16,7 +18,7 @@ struct HelpView: View {
                 Text("Your gateway to integrating ChatGPT's capabilities directly into your workflow across any application on macOS.")
                     .fixedSize(horizontal: false, vertical: true)
                 
-                Text("Get Started")
+                Text("Setup (required)")
                     .font(.headline)
                     .padding(.top)
                 
@@ -27,9 +29,18 @@ struct HelpView: View {
                     .font(.headline)
                     .padding(.top)
                 
-                VStack(alignment: .leading, spacing: 5) {
+                VStack(alignment: .leading) {
                     Text("• Highlight the text you want to change in any application").fixedSize(horizontal: false, vertical: true)
                     Text("• Use the shortcut for text transformation, default is Command-Shift-\\\\").fixedSize(horizontal: false, vertical: true)
+                }
+                
+                Text("Support")
+                    .font(.headline)
+                    .padding(.top)
+                
+                HStack(spacing: 3) {
+                    Text("Create an issue at")
+                    Link(projectURL, destination: URL(string: projectURL)!)
                 }
             }
             .padding(.top)
