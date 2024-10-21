@@ -9,9 +9,7 @@ struct SettingsView: View {
     @AppStorage(Defaults.Keys.model.rawValue) var model: String = defaultModel
     
     @AppStorage(Defaults.Keys.baseUrl.rawValue) var baseUrl: String = ""
-    
-    let apiKeysURL = "https://platform.openai.com/api-keys"
-    
+        
     var body: some View {
         Form {
             Section(header: Text("General").font(.title)) {
@@ -24,21 +22,14 @@ struct SettingsView: View {
                     NSWorkspace.shared.open(url)
                 }
             }
-            Section(header: Text("OpenAI Settings").font(.title)) {
-                TextField("API Key", text: $apiKey, prompt: Text("sk-xkpf2..."))
-                    .textFieldStyle(.roundedBorder)
-                HStack {
-                    Text("Get one from:").foregroundStyle(.secondary)
-                    Link(apiKeysURL, destination: URL(string: apiKeysURL)!)
-                }
+            Section(header: Text("LLM Settings").font(.title)) {
                 TextField("Base URL", text: $baseUrl, prompt: Text(defaultBaseUrl.absoluteString))
                     .textFieldStyle(.roundedBorder)
                 Text("Leave empty for default").foregroundStyle(.secondary)
-                Picker("Model", selection: $model) {
-                    ForEach(models, id: \.self) { model in
-                        Text(model).tag(model)
-                    }
-                }
+                TextField("Model", text: $model, prompt: Text(defaultModel))
+                    .textFieldStyle(.roundedBorder)
+                TextField("API Key", text: $apiKey, prompt: Text("sk-xkpf2..."))
+                    .textFieldStyle(.roundedBorder)
             }
             Section(header: Text("System Prompt").font(.title)) {
                 TextEditor(text: $prompt)

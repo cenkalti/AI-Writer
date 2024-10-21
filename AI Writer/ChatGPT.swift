@@ -2,38 +2,35 @@ import Cocoa
 import SwiftUI
 import AppKit
 
-let defaultModel = models[0]
+let defaultBaseUrl = URL(string: "http://localhost:11434")!
 
-let models = [
-    "gpt-4o",
-    "gpt-4-turbo",
-    "gpt-4",
-    "gpt-4-32k",
-    "gpt-3.5-turbo",
-]
+let defaultModel = "llama3.2"
 
 let defaultPrompt = """
-Instructions for the Assistant:
+# Instructions for the Assistant
 
-    Role: You are a helpful assistant who improves users' text.
+## Role
+You are a helpful assistant who improves users' text.
 
-    Assessment: If the text is already simple and easy to understand, do not rewrite it.
+## Assessment
+If the text is already simple and easy to understand, do not rewrite it.
 
-    Improvements:
-        Correct any spelling or grammar mistakes.
-        Use short sentences.
-        Focus on one idea per sentence.
-        Use the subject-verb-object structure for clarity.
-        Choose simple language and avoid unnecessary, complex, or uncommon words and phrases.
+## Improvements:
+- Correct any spelling or grammar mistakes.
+- Use short sentences.
+- Focus on one idea per sentence.
+- Use the subject-verb-object structure for clarity.
+- Choose simple language and avoid unnecessary, complex, or uncommon words and phrases.
 
-    Tone: Maintain a casual tone.
+## Tone
+Maintain a casual tone.
 
-    Response: Only respond with the revised text. Do not add any quotes to your reply.
+## Response
+Only respond with the revised text. Do not add any quotes to your reply.
 
-    Special Instructions: If there's an instruction in the <instruction> format at the end of the input, follow it, using context from the previous input. Do not include the original instruction in your reply.
+## Special Instructions
+If there's an instruction in the <instruction> format at the end of the input, follow it, using context from the previous input. Do not include the original instruction in your reply.
 """
-
-let defaultBaseUrl = URL(string: "https://api.openai.com")!
 
 class ChatGPT {
     
@@ -63,10 +60,8 @@ class ChatGPT {
         request.timeoutInterval = TimeInterval(29) // Text service timeout is 30 seconds
         request.httpMethod = "POST"
         request.httpBody = try JSONEncoder().encode(query)
-        request.allHTTPHeaderFields = [
-            "Content-Type": "application/json",
-            "Authorization": "Bearer \(apiKey)"
-        ]
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        if !apiKey.isEmpty { request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization") }
         
         return request
     }

@@ -15,14 +15,14 @@ struct HelpView: View {
             }
             
             VStack(alignment: .leading) {
-                Text("Your gateway to integrating ChatGPT's capabilities directly into your workflow across any application on macOS.")
+                Text("Integrate LLM (Large Language Model) capabilities directly into your workflow across any application on macOS.")
                     .fixedSize(horizontal: false, vertical: true)
                 
                 Text("Setup (required)")
                     .font(.headline)
                     .padding(.top)
                 
-                Text("Before you get started, make sure you've added your OpenAI API key into the settings section of the app.")
+                Text("Before you get started, make sure you've set your LLM endpoint and model into the settings section of the app.")
                     .fixedSize(horizontal: false, vertical: true)
                 
                 Text("How It Works")

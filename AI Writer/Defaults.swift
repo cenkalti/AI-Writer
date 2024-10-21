@@ -48,10 +48,6 @@ class Defaults {
         guard let apiKeyStr = UserDefaults.standard.string(forKey: Keys.apiKey.rawValue) else {
             throw AppError.runtimeError("empty \(Keys.apiKey.rawValue)")
         }
-        let apiKey = apiKeyStr.trimmingCharacters(in: .whitespacesAndNewlines)
-        if apiKey.isEmpty {
-            throw AppError.runtimeError("Empty OpenAI API key. Please enter the key in the settings window.")
-        }
-        return apiKey
+        return apiKeyStr.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }
