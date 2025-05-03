@@ -75,7 +75,11 @@ class ChatGPT {
         guard message != "[DONE]" else { return "" }
         
         let chunk = try JSONDecoder().decode(Chunk.self, from: Data(message.utf8))
-        return chunk.choices.first?.delta.content ?? ""
+        
+        if chunk.error != nil {
+            throw AppError.runtimeError("API returned error \(chunk.error!.code): \(chunk.error!.message)")
+        }
+        return chunk.choices?.first?.delta.content ?? ""
     }
     
     struct Query: Encodable {
@@ -89,8 +93,14 @@ class ChatGPT {
         let content: String
     }
     
+    struct OpenAIError: Decodable {
+        let code: Int
+        let message: String
+    }
+    
     struct Chunk: Decodable {
-        let choices: [Choice]
+        let choices: [Choice]?
+        let error: OpenAIError?
     }
     
     struct Choice: Decodable {
